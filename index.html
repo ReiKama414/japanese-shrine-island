@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="ReiKama414" />
+    <meta name="description" content="Interactive 3D Japanese Shrine Island diorama by ReiKama414 — Made with Gemini 4" />
+    <meta name="generator" content="Gemini 4" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Japanese Shrine Island — Interactive 3D WebGL</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <style>
+      @keyframes ui-fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      #root { animation: ui-fade-in 0.7s ease-out both; }
+
+      /* Soft shrine-tone range sliders */
+      .diorama-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 14px;
+        background: transparent;
+        outline: none;
+        cursor: pointer;
+        accent-color: #a85a42;
+      }
+      .diorama-slider::-webkit-slider-runnable-track {
+        height: 3px;
+        border-radius: 999px;
+        background: rgba(90, 78, 64, 0.16);
+      }
+      .diorama-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 14px;
+        height: 14px;
+        margin-top: -5px;
+        border-radius: 999px;
+        background: #f7f2ea;
+        border: 1.5px solid #a85a42;
+        box-shadow: 0 1px 3px rgba(60, 40, 20, 0.18);
+        transition: transform 0.15s ease, background 0.15s ease;
+      }
+      .diorama-slider:hover::-webkit-slider-thumb {
+        transform: scale(1.08);
+        background: #fffaf4;
+      }
+      .diorama-slider::-moz-range-track {
+        height: 4px;
+        border-radius: 999px;
+        background: rgba(90, 78, 64, 0.18);
+        border: none;
+      }
+      .diorama-slider::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+        border-radius: 999px;
+        background: #f7f2ea;
+        border: 1.5px solid #a85a42;
+        box-shadow: 0 1px 3px rgba(60, 40, 20, 0.18);
+      }
+
+      /* Night UI */
+      .diorama-slider-night {
+        accent-color: #7ea8e8;
+      }
+      .diorama-slider-night::-webkit-slider-runnable-track {
+        background: rgba(150, 180, 230, 0.22);
+      }
+      .diorama-slider-night::-webkit-slider-thumb {
+        background: #1a2438;
+        border-color: #8eb0e8;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+      }
+      .diorama-slider-night:hover::-webkit-slider-thumb {
+        background: #243352;
+      }
+      .diorama-slider-night::-moz-range-track {
+        background: rgba(150, 180, 230, 0.22);
+      }
+      .diorama-slider-night::-moz-range-thumb {
+        background: #1a2438;
+        border-color: #8eb0e8;
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 overflow-hidden bg-[#ede8df] select-none">
+    <div id="root" class="w-screen h-screen"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

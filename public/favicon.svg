@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Japanese Shrine Island">
+  <rect width="64" height="64" rx="14" fill="#ede8df"/>
+  <ellipse cx="32" cy="46" rx="22" ry="8" fill="#5ee0d4" opacity="0.55"/>
+  <ellipse cx="32" cy="44" rx="14" ry="5.5" fill="#34b8a8" opacity="0.35"/>
+  <path d="M18 42c2.2-6.5 6.4-10 14-10s11.8 3.5 14 10c-3.2 1.8-8.2 2.8-14 2.8S21.2 43.8 18 42z" fill="#6a8f5a"/>
+  <path d="M18 42c1.5-2.2 4.2-3.4 7-3.4h14c2.8 0 5.5 1.2 7 3.4-2.8 1.2-6.8 1.8-14 1.8s-11.2-.6-14-1.8z" fill="#567848"/>
+  <g fill="#c23b2e">
+    <rect x="21" y="16" width="3.2" height="24" rx="0.6"/>
+    <rect x="39.8" y="16" width="3.2" height="24" rx="0.6"/>
+    <rect x="18" y="18" width="28" height="3.2" rx="0.8"/>
+    <rect x="20.5" y="23.5" width="23" height="2.4" rx="0.6"/>
+    <path d="M16 15.2h32l-1.6 3.2H17.6z"/>
+  </g>
+  <rect x="24.5" y="25.8" width="15" height="1.6" rx="0.4" fill="#a83228"/>
+</svg>
