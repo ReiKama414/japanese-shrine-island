@@ -2,7 +2,7 @@
 
 互動式 3D WebGL 日本神社島嶼微縮模型——React、Three.js、React Three Fiber 與自訂 GLSL 水面著色器。
 
-**Made with Gemini 4** · by ReiKama414
+**Made with Gemini 4** 
 
 - Live: https://reikama414.github.io/japanese-shrine-island/
 - GitHub: https://github.com/ReiKama414/japanese-shrine-island
